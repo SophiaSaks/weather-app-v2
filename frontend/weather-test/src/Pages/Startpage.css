@@ -1,0 +1,31 @@
+main {
+    width: 25rem;
+    height: max-content;
+    min-height: 25rem;
+    background-color: #7AD2A2;
+    color:#303030;
+    opacity: 0.8;
+    border-radius: 1.875rem;
+    box-shadow: 0 0.625rem 1.25rem #5553;
+    padding: 1.5rem;
+}
+
+main form {
+    border: 0.125rem #fff solid;
+    display: flex; 
+    justify-content: space-between;
+    border-radius: 1.875rem;
+}
+
+main form input{
+    width: 16rem;
+    letter-spacing: 0.125rem;
+    font-size: 1.125rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main form input::placeholder{
+    font-size: 0.75rem;
+    letter-spacing: 0.013rem;
+    color: darkolivegreen;
+}

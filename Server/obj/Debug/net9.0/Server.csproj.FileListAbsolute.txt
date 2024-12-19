@@ -32,3 +32,6 @@ C:\Users\sophi\Kodprojekt\fullstack-recepies\Server\obj\Debug\net9.0\refint\Serv
 C:\Users\sophi\Kodprojekt\fullstack-recepies\Server\obj\Debug\net9.0\Server.pdb
 C:\Users\sophi\Kodprojekt\fullstack-recepies\Server\obj\Debug\net9.0\Server.genruntimeconfig.cache
 C:\Users\sophi\Kodprojekt\fullstack-recepies\Server\obj\Debug\net9.0\ref\Server.dll
+C:\Users\sophi\Kodprojekt\fullstack-recepies\Server\bin\Debug\net9.0\DotEnv.dll
+C:\Users\sophi\Kodprojekt\fullstack-recepies\Server\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\sophi\Kodprojekt\fullstack-recepies\Server\bin\Debug\net9.0\System.IO.Abstractions.dll

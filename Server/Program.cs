@@ -1,13 +1,22 @@
-using WeatherApiExample.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Register WeatherService
-builder.Services.AddHttpClient<WeatherService>();
-
 builder.Services.AddControllers();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:3000") 
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+builder.Services.AddHttpClient<WeatherService>();
+
 var app = builder.Build();
+
+app.UseCors("AllowReactApp");
 
 app.MapControllers();
 
