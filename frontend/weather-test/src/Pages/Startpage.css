@@ -1,4 +1,8 @@
-main {
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 25rem;
     height: max-content;
     min-height: 25rem;
@@ -10,22 +14,64 @@ main {
     padding: 1.5rem;
 }
 
-main form {
-    border: 0.125rem #fff solid;
-    display: flex; 
-    justify-content: space-between;
-    border-radius: 1.875rem;
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-main form input{
+.name {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+}
+
+li {
+    background-color: #3F2D7A;
+    color: #f9f9f9;
+    border-radius: 0.75rem;
+    padding: 1.25rem 0.75rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.875rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.031rem;
+    padding: 0.75rem;
+    white-space: nowrap;
+}
+
+li:nth-child(2){
+    background-color: #68216A;
+}
+
+.temperature {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+input{
     width: 16rem;
     letter-spacing: 0.125rem;
     font-size: 1.125rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main form input::placeholder{
+input::placeholder{
     font-size: 0.75rem;
     letter-spacing: 0.013rem;
     color: darkolivegreen;
+}
+
+button {
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin: 0.75rem;
 }
