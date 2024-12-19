@@ -10,21 +10,23 @@
     color:#303030;
     opacity: 0.8;
     border-radius: 1.875rem;
-    box-shadow: 0 0.625rem 1.25rem #5553;
+    box-shadow: 0 0.2rem 1rem #5553;
     padding: 1.5rem;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10%;
 }
 
 .name {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.description {
+    display: flex; 
+    justify-content: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0.5rem;
 }
 
 ul {
@@ -57,21 +59,34 @@ li:nth-child(2){
     font-size: 1.75rem;
 }
 
-input{
+header {
+    border: 0.125rem #fff solid;
+    display: flex; 
+    justify-content: space-between;
+    border-radius: 1.875rem;
+}
+
+header input{
     width: 16rem;
     letter-spacing: 0.125rem;
     font-size: 1.125rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input::placeholder{
+header input::placeholder{
     font-size: 0.75rem;
     letter-spacing: 0.013rem;
     color: darkolivegreen;
 }
 
-button {
-    border-radius: 2rem;
-    font-size: 1rem;
-    margin: 0.75rem;
+header input, form button {
+    border: none; 
+    background-color: transparent;
+    outline: none;
+    padding: 0.625rem;
+    cursor: pointer;
+}
+
+header i {
+    opacity: 0.9;
 }

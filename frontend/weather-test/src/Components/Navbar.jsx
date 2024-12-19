@@ -3,11 +3,7 @@ import './Navbar.css'
 function Navbar() {
     return (
       <nav>
-        <ul>
-            <li>
-                About us
-            </li>
-        </ul>
+        <h1>Weather app</h1>
       </nav>
     );
   }

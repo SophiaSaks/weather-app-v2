@@ -30,33 +30,35 @@ const Weather = () => {
     return (
 
 
-        <div>
+        <div className="main">
             <div className="header">
-            <h1>Weather App</h1>
-            <input
-                type="text"
-                value={city}
-                onChange={handleCityChange}
-                placeholder="Enter a city, like 'Stockholm' for example"
-            />
-            <button onClick={fetchWeather}>Search</button>
-            {loading && <p>Loading...</p>}
-            {error && <p>{error}</p>}
+                    <input
+                        type="text"
+                        value={city}
+                        onChange={handleCityChange}
+                        placeholder="Enter a city, like 'Stockholm' for example"
+                    />
+                    <button onClick={fetchWeather}>
+                        <i className="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                {loading && <p>Loading...</p>}
+                {error && <p>{error}</p>}
             </div>
             {weather && (
-                <div className="main">
+                <div className="weathersection">
                     <section className="result">
                         <figure className="name" id="city">
                             <figcaption id="figcaption">{weather.name}</figcaption>
                         </figure>
                         <figure className="temperature">
-                            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} alt="weather-picture"/>
-                                <figcaption>
-                                    <span>{Math.floor(weather.main.temp)}</span>
-                                    <sup>o</sup>
-                                </figcaption>
+                            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="weather-picture" />
+                            <figcaption>
+                                <span>{Math.floor(weather.main.temp)}</span>
+                                <sup>o</sup>
+                            </figcaption>
                         </figure>
                     </section>
+                    <span className="description">{weather.weather[0].description}</span>
                     <ul>
                         <li>
                             <span>Humidity</span>

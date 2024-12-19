@@ -1,9 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #C2FCDC;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
